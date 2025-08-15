@@ -12,10 +12,10 @@
       "recipe": ["bf_sword", "bf_sword"]
     },
     {
-      "id": "infinityedge",
+      "id": "giantslayer",
       "name": "ジャイアント スレイヤー",
       "description": "攻撃力+20%\n魔力+20%\n攻撃速度+15%\nダメージ増加+10%\n\nタンクに対して追加で15%のダメージ増加効果を獲得する。",
-      "image": "/items/infinityedge.avif",
+      "image": "/items/giantslayer.avif",
       "recipe": ["bf_sword", "recurve_bow"]
     },
     {
