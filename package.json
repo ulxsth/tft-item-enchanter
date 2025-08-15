@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "NODE_ENV=production next build",
+    "build:dev": "next build",
+    "export": "NODE_ENV=production next build",
+    "deploy": "npm run export",
     "start": "next start",
     "lint": "next lint"
   },

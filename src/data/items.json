@@ -1,0 +1,52 @@
+{
+  "baseItems": [
+    {
+      "id": "bf_sword",
+      "name": "B.F.ソード",
+      "description": "攻撃力+10%",
+      "image": "/items/bfsword.avif"
+    },
+    {
+      "id": "recurve_bow",
+      "name": "リカーブボウ",
+      "description": "攻撃速度 +10%",
+      "image": "/items/recurvebow.avif"
+    },
+    {
+      "id": "sparring_gloves",
+      "name": "スパーリンググローブ",
+      "description": "クリティカル率 +10%",
+      "image": "/items/sparringgloves.avif"
+    },
+    {
+      "id": "needlessly_large_rod",
+      "name": "ムダニデカイ ロッド",
+      "description": "魔力 +10%",
+      "image": "/items/needlesslylargerod.avif"
+    },
+    {
+      "id": "tear_of_the_goddess",
+      "name": "女神の涙",
+      "description": "マナ +10",
+      "image": "/items/tearofthegoddess.avif"
+    },
+    {
+      "id": "chain_vest",
+      "name": "チェインベスト",
+      "description": "物理防御 +20%",
+      "image": "/items/chainvest.avif"
+    },
+    {
+      "id": "negatron_cloak",
+      "name": "ネガトロンクローク",
+      "description": "魔法防御 +20%",
+      "image": "/items/negatroncloak.avif"
+    },
+    {
+      "id": "giants_belt",
+      "name": "ジャイアントベルト",
+      "description": "体力 +150",
+      "image": "/items/giantsbelt.avif"
+    }
+  ]
+}

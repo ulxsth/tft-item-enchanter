@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TFT Item Enchanter
 
-## Getting Started
+An interactive learning game to master Teamfight Tactics (TFT) item recipes! Test your knowledge by identifying which base items are needed to craft composite items.
+
+![TFT Item Enchanter Screenshot](https://via.placeholder.com/800x400?text=TFT+Item+Enchanter+Game+Screenshot)
+
+## 🎮 Features
+
+- **Interactive Quiz Game**: Answer questions about TFT item combinations
+- **Real-time Scoring**: Track your correct/incorrect answers and accuracy
+- **Progressive Difficulty**: Learn all the essential TFT item recipes
+- **Responsive Design**: Play on desktop, tablet, or mobile
+- **Visual Feedback**: Clear indication of correct and incorrect answers
+
+## 🚀 Getting Started
+
+### Development
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the static site for GitHub Pages:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+The static files will be generated in the `docs` folder.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Deployment**: GitHub Pages
+- **State Management**: React Hooks
 
-## Deploy on Vercel
+## 📱 How to Play
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Click "Start Game" to begin
+2. You'll see a composite TFT item and several base item options
+3. Select the correct base items needed to craft the composite item
+4. Click "Submit Answer" to check if you're correct
+5. Continue through all questions to see your final score!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Game Features
+
+- **10 Questions per Game**: Each game consists of 10 randomly selected item combinations
+- **Real-time Scoring**: See your current score and accuracy as you play
+- **Visual Feedback**: Correct answers are highlighted in green, incorrect in red
+- **Responsive UI**: Optimized for all device sizes
+
+## 📦 Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── GameBoard.tsx   # Main game interface
+│   ├── ItemCard.tsx    # Individual item display
+│   ├── QuestionDisplay.tsx # Question presentation
+│   └── ScoreBoard.tsx  # Score tracking
+├── data/
+│   └── items.json      # TFT item database
+├── hooks/
+│   └── useGame.ts      # Game logic hook
+├── types/
+│   └── game.ts         # TypeScript type definitions
+└── app/
+    ├── page.tsx        # Home page
+    └── layout.tsx      # App layout
+```
+
+## 🚀 Deployment
+
+This project is configured for automatic deployment to GitHub Pages. When you push to the main branch, GitHub Actions will:
+
+1. Build the Next.js application
+2. Export static files
+3. Deploy to GitHub Pages
+
+To set up deployment:
+
+1. Enable GitHub Pages in your repository settings
+2. Set the source to "GitHub Actions"
+3. Push to the main branch
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. Some areas for improvement:
+
+- Add more TFT items and recipes
+- Implement difficulty levels
+- Add item images
+- Create additional game modes
+- Improve mobile responsiveness
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🎯 About TFT
+
+Teamfight Tactics is an auto-battler game mode in League of Legends where players combine base items to create powerful composite items for their champions. This game helps players memorize these crucial item combinations!

@@ -1,0 +1,261 @@
+{
+  "説明": "このファイルでTFTの合成アイテムレシピを管理します",
+  "フォーマット": "各アイテムのIDをキーとして、name、description、image、recipe配列を設定",
+  "注意": "recipe配列には必要な素材アイテムのIDを記載",
+  
+  "problems": [
+    {
+      "id": "deathblade",
+      "name": "デスブレード",
+      "description": "攻撃力+55%\nダメージ増加+10%",
+      "image": "/items/deathblade.avif",
+      "recipe": ["bf_sword", "bf_sword"]
+    },
+    {
+      "id": "infinityedge",
+      "name": "ジャイアント スレイヤー",
+      "description": "攻撃力+20%\n魔力+20%\n攻撃速度+15%\nダメージ増加+10%\n\nタンクに対して追加で15%のダメージ増加効果を獲得する。",
+      "image": "/items/infinityedge.avif",
+      "recipe": ["bf_sword", "recurve_bow"]
+    },
+    {
+      "id": "rapidfirecannon",
+      "name": "レッドバフ",
+      "description": "攻撃速度+40%\nダメージ増加+3%\n\n通常攻撃とスキルが5秒間、対象に1%の燃焼と33%の負傷を付与する。",
+      "image": "/items/rapidfirecannon.avif",
+      "recipe": ["recurve_bow", "recurve_bow"]
+    },
+    {
+      "id": "hextechgunblade",
+      "name": "ヘクステック ガンブレード",
+      "description": "攻撃速度+20%\n魔力+20%\n自動マナ回復+1%\nオムニヴァンプ+15%\n\nもっとも残り体力の割合が低い味方の体力を、与えたダメージの20％分回復する。",
+      "image": "/items/hextechgunblade.avif",
+      "recipe": ["bf_sword", "needlessly_large_rod"]
+    },
+    {
+      "id": "guinsoosrageblade",
+      "name": "グインソー レイジブレード",
+      "description": "魔力+10%\n攻撃速度+10%\n\n毎秒、攻撃速度が7%増加するスタックを獲得する。",
+      "image": "/items/guinsoosrageblade.avif",
+      "recipe": ["recurve_bow", "uselessly_large_rod"]
+    },
+    {
+      "id": "rabadonsdeathcap",
+      "name": "ラバドン デスキャップ",
+      "description": "魔力+50\nダメージ増加+15%",
+      "image": "/items/rabadonsdeathcap.avif",
+      "recipe": ["needlessly_large_rod", "needlessly_large_rod"]
+    },
+    {
+      "id": "spearofshojin",
+      "name": "ショウジンの矛",
+      "description": "攻撃速度+18%\n魔力+10\n自動マナ回復+1\n\n通常攻撃時にマナを追加で5獲得する。",
+      "image": "/items/spearofshojin.avif",
+      "recipe": ["bf_sword", "tear_of_the_goddess"]
+    },
+    {
+      "id": "statikkshiv",
+      "name": "ヴォイド スタッフ",
+      "description": "魔力+35\n攻撃速度+15%\n自動マナ回復+1\n\n通常攻撃とスキルダメージが、5秒間、対象に30%の細断を付与する。この効果はスタックしない。\n\n細断：魔法防御を低下させる",
+      "image": "/items/statikkshiv.avif",
+      "recipe": ["tear_of_the_goddess", "recurve_bow"]
+    },
+    {
+      "id": "archangelsstaff",
+      "name": "アークエンジェル スタッフ",
+      "description": "魔力+20\n自動マナ回復+1\n\n戦闘開始時：戦闘中、5秒ごとに魔力が30増加する。",
+      "image": "/items/archangelsstaff.avif",
+      "recipe": ["tear_of_the_goddess", "needlessly_large_rod"]
+    },
+    {
+      "id": "bluebuff",
+      "name": "ブルーバフ",
+      "description": "攻撃速度+15%\n魔力+15\n自動マナ回復+5",
+      "image": "/items/bluebuff.avif",
+      "recipe": ["tear_of_the_goddess", "tear_of_the_goddess"]
+    },
+    {
+      "id": "guardianangel",
+      "name": "ナイト エッジ",
+      "description": "攻撃力+10%\n魔力+10\n攻撃速度+15%\n防御力+20\n\nライフライン：体力が60%になると、少しの間、対象指定負荷状態になり、ステータス弱体化効果を除去する。",
+      "image": "/items/guardianangel.avif",
+      "recipe": ["bf_sword", "chain_vest"]
+    },
+    {
+      "id": "titansresolve",
+      "name": "巨人の誓い",
+      "description": "攻撃速度+10%\n防御力+20\n\n通常攻撃した際、もしくはダメージを受けた際に、攻撃力が2%、魔力が2増加する。この効果は25回までスタックする。\n最大スタックになると、物理防御が15、魔法防御が15増加し、行動妨害を受けなくなる。",
+      "image": "/items/titansresolve.avif",
+      "recipe": ["recurve_bow", "chain_vest"]
+    },
+    {
+      "id": "crownguard",
+      "name": "クラウン ガード",
+      "description": "魔力+20\n防御力+20\n体力+100\n\n戦闘開始時：8秒間、自身の最大体力の25%にあたるシールドを獲得する。\nシールドが消滅すると、魔力が25増加する。",
+      "image": "/items/crownguard.avif",
+      "recipe": ["needlessly_large_rod", "chain_vest"]
+    },
+    {
+      "id": "frozenheart",
+      "name": "プロテクターの誓い",
+      "description": "防御力+25\n魔法防御+25\n自動マナ回復+1\n\n戦闘開始時：マナが20増加する。\nライフライン：体力が40%になると、15マナと最大体力の20%にあたる耐久値を持つシールドを獲得する。",
+      "image": "/items/frozenheart.avif",
+      "recipe": ["tear_of_the_goddess", "chain_vest"]
+    },
+    {
+      "id": "bramblevest",
+      "name": "ブランブル ベスト",
+      "description": "防御力+65\n\n最大体力が7%増加する。\n通常攻撃で受けるダメージが8%軽減される。通常攻撃を受けると、隣接するすべての敵に100の魔法ダメージを与える。\n\nクールダウン:2秒\n",
+      "image": "/items/bramblevest.avif",
+      "recipe": ["chain_vest", "chain_vest"]
+    },
+    {
+      "id": "bloodthirster",
+      "name": "ブラッドサースター",
+      "description": "攻撃速度+15%\n魔力+15\nオムニヴァンプ+20%\n魔法防御+20\n\n各戦闘で1回、体力が40％になった時、最大体力の25%にあたる耐久値を持つシールドを獲得する。このシールドは最大で5秒間持続する。",
+      "image": "/items/bloodthirster.avif",
+      "recipe": ["bf_sword", "negatron_cloak"]
+    },
+    {
+      "id": "runaanshurricane",
+      "name": "クラーケンの怒り",
+      "description": "攻撃力+20%\n攻撃速度+10%\n魔法防御+20\n\n通常攻撃するたびに、攻撃力が3%増加するスタックを獲得する。",
+      "image": "/items/runaanshurricane.avif",
+      "recipe": ["recurve_bow", "negatron_cloak"]
+    },
+    {
+      "id": "ionicspark",
+      "name": "アイオニック スパーク",
+      "description": "魔力+15\n体力+150\n魔法防御+15\n\n2マス以内の敵に30％の細断を付与する。スキルを使用した敵に対し、対象が使用したマナの160%にあたる魔法ダメージを与える。\n\n細断：魔法防御を低下させる",
+      "image": "/items/ionicspark.avif",
+      "recipe": ["needlessly_large_rod", "negatron_cloak"]
+    },
+    {
+      "id": "adaptivehelm",
+      "name": "アダプティブ ヘルム",
+      "description": "魔法防御+20\n自動マナ回復+2\n\nあらゆるソースから獲得するマナが追加で15%増加する。装備者はロールに応じて追加ボーナスを獲得する。\nタンク・ファイター：物理防御と魔法防御が35増加する。\nその他のロール：攻撃力と魔力が15増加する。",
+      "image": "/items/adaptivehelm.avif",
+      "recipe": ["negatron_cloak", "tear_of_the_goddess"]
+    },
+    {
+      "id": "gargoylestoneplate",
+      "name": "ガーゴイル ストーンプレート",
+      "description": "防御力+25\n体力+100\n魔法防御+25\n\n装備者を攻撃対象としている敵1体につき、10の物理防御と10の魔法防御を獲得する。",
+      "image": "/items/gargoylestoneplate.avif",
+      "recipe": ["chain_vest", "negatron_cloak"]
+    },
+    {
+      "id": "dragonsclaw",
+      "name": "ドラゴン クロウ",
+      "description": "魔法防御+75\n最大体力が9%増加する。\n\n2秒ごとに最大体力の2.5%を回復する。\n",
+      "image": "/items/dragonsclaw.avif",
+      "recipe": ["negatron_cloak", "negatron_cloak"]
+    },
+    {
+      "id": "steraksgage",
+      "name": "ステラックの篭手",
+      "description": "攻撃力+40%\n体力+300\n\n体力が60%になると、装備者の最大体力の50％にあたる耐久値のシールドを獲得する。このシールドは5秒かけて急速に減少する。",
+      "image": "/items/steraksgage.avif",
+      "recipe": ["bf_sword", "giants_belt"]
+    },
+    {
+      "id": "leviathan",
+      "name": "ナッシャー トゥース",
+      "description": "魔力+25\n攻撃速度+10%\n体力+150\n自動マナ回復+2\n\nスキル発動から5秒間、攻撃速度が30％増加する。",
+      "image": "/items/leviathan.avif",
+      "recipe": ["recurve_bow", "giants_belt"]
+    },
+    {
+      "id": "morellonomicon",
+      "name": "モレロノミコン",
+      "description": "魔力+20\n体力+150\n自動マナ回復+1\n\n通常攻撃またはスキルでダメージを与えると、敵に10秒間1%の燃焼と33%の負傷を付与する。\n\n燃焼：毎秒、対象の最大体力の一定割合を確定ダメージとして与える\n負傷：回復効果を低下させる",
+      "image": "/items/morellonomicon.avif",
+      "recipe": ["needlessly_large_rod", "giants_belt"]
+    },
+    {
+      "id": "redemption",
+      "name": "スピリット ビサージュ",
+      "description": "体力+300\n自動マナ回復+2\n耐久力+10%\n\n毎秒、減少体力の2.5%を自動回復する。",
+      "image": "/items/redemption.avif",
+      "recipe": ["giants_belt", "tear_of_the_goddess"]
+    },
+    {
+      "id": "redbuff",
+      "name": "サンファイア ケープ",
+      "description": "防御力+20\n体力+150\n\n最大体力が8%増加する。\n2秒ごとに、2マス以内にいる敵1体に10秒間、1%の燃焼と33%の負傷を付与する。\n\n燃焼：毎秒、対象の最大体力の一定割合を確定ダメージとして与える\n負傷：回復効果を低下させる",
+      "image": "/items/redbuff.avif",
+      "recipe": ["chain_vest", "giants_belt"]
+    },
+    {
+      "id": "spectralgauntlet",
+      "name": "イーブン シュラウド",
+      "description": "体力+150\n魔法防御+20\n\n2マス以内の敵に30％の分解を付与する。戦闘開始から15秒間、物理防御と魔法防御が25増加する。\n\n分解：物理防御を低下させる",
+      "image": "/items/spectralgauntlet.avif",
+      "recipe": ["negatron_cloak", "giants_belt"]
+    },
+    {
+      "id": "warmogsarmor",
+      "name": "ワーモグ アーマー",
+      "description": "体力+600\n\n最大体力が12%増加する。",
+      "image": "/items/warmogsarmor.avif",
+      "recipe": ["giants_belt", "giants_belt"]
+    },
+    {
+      "id": "infinityedge",
+      "name": "インフィニティ エッジ",
+      "description": "攻撃力+35%\nクリティカル率+35%\n\nスキルがクリティカル判定を持つようになる。\n装備者のスキルがすでにクリティカル判定を持っている場合は、代わりにクリティカルダメージが10％増加する。",
+      "image": "/items/infinityedge.avif",
+      "recipe": ["bf_sword", "sparring_gloves"]
+    },
+    {
+      "id": "lastwhisper",
+      "name": "ラスト ウィスパー",
+      "description": "攻撃力+15%\n攻撃速度+20%\nクリティカル率+20%\n\n敵に物理ダメージを与えると、3秒間、対象に30％の分解を付与する。この効果はスタックしない。\n\n分解：物理防御を低下させる",
+      "image": "/items/lastwhisper.avif",
+      "recipe": ["recurve_bow", "sparring_gloves"]
+    },
+    {
+      "id": "jeweledgauntlet",
+      "name": "ジュエル ガントレット",
+      "description": "魔力+35\nクリティカル率+35%\n\nスキルがクリティカル判定を持つようになる。\n装備者のスキルがすでにクリティカル判定を持っている場合は、代わりにクリティカルダメージが10％増加する。",
+      "image": "/items/jeweledgauntlet.avif",
+      "recipe": ["needlessly_large_rod", "sparring_gloves"]
+    },
+    {
+      "id": "unstableconcoction",
+      "name": "ハンド オブ ジャスティス",
+      "description": "クリティカル率+20%\n自動マナ回復+1\n\n2つの効果を獲得する：\n- 攻撃力が15%、魔力が15増加する。\n- オムニヴァンプが12%増加する。\n\n体力が50％以上の場合は、攻撃力と魔力の増加量が2倍になる。体力が50％未満の場合は、オムニヴァンプの増加量が2倍になる。",
+      "image": "/items/unstableconcoction.avif",
+      "recipe": ["tear_of_the_goddess", "sparring_gloves"]
+    },
+    {
+      "id": "nightharvester",
+      "name": "揺るがぬ心",
+      "description": "防御力+20\nクリティカル率+20%\n体力+250\n\n10%の耐久力を獲得する。体力が50％を上回っていると、代わりに18%の耐久力を獲得する。",
+      "image": "/items/nightharvester.avif",
+      "recipe": ["giants_belt", "sparring_gloves"]
+    },
+    {
+      "id": "quicksilver",
+      "name": "クイックシルバー",
+      "description": "攻撃速度+30%\nクリティカル率+20%\n魔法防御+20\n\n戦闘開始時：18秒間、行動妨害効果を受けなくなる。この効果時間中、2秒ごとに攻撃速度が3%増加する。重複装備不可。",
+      "image": "/items/quicksilver.avif",
+      "recipe": ["negatron_cloak", "sparring_gloves"]
+    },
+    {
+      "id": "powergauntlet",
+      "name": "ストライカー フレイル",
+      "description": "攻撃速度+10%\nクリティカル率+20%\n体力+150\nダメージ増加+10％\n\nクリティカル時に5秒間、5％のダメージ増加効果を獲得する。この効果は最大4回スタックする。",
+      "image": "/items/powergauntlet.avif",
+      "recipe": ["giants_belt", "sparring_gloves"]
+    },
+    {
+      "id": "thiefsgloves",
+      "name": "盗賊のグローブ",
+      "description": "クリティカル率+20%\n体力+150\n\n毎ラウンド：ランダムなアイテムを2つ装備する。",
+      "image": "/items/thiefsgloves.avif",
+      "recipe": ["sparring_gloves", "sparring_gloves"]
+    }
+  ]
+
+}
