@@ -33,7 +33,12 @@ jobs:
       run: npm ci
       
     - name: Build project
-      run: npm run build
+      run: |
+        npm run build
+        touch ./docs/.nojekyll
+      env:
+        DEPLOY_ENV: gh-pages
+        NODE_ENV: production
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
