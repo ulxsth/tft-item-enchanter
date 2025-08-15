@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react';
-import Image from 'next/image';
 import { BaseItem } from '@/types/game';
+import { getImagePath } from '@/utils/imagePath';
 
 interface ItemCardProps {
   item: BaseItem;
@@ -47,13 +47,10 @@ export const ItemCard: React.FC<ItemCardProps> = ({
       title={`${item.name}\n${item.description}`}
     >
       <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded flex items-center justify-center mb-1 relative">
-        <Image
-          src={item.image}
+        <img
+          src={getImagePath(item.image)}
           alt={item.name}
-          width={40}
-          height={40}
           className="w-full h-full object-cover rounded"
-          unoptimized
         />
       </div>
       {/* アイテム名をスマホでは非表示 */}
